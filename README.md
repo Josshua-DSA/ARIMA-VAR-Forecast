@@ -1,8 +1,9 @@
 # ARIMA-VAR Forecasting untuk IHSG
 
 Analisis time series komprehensif untuk memprediksi pergerakan Indeks Harga Saham Gabungan (IHSG) menggunakan model ARIMA dan VAR
+nb: Proyek dimulai 4 November 2025
 
-## 📌 Deskripsi
+## Deskripsi
 
 Proyek ini merupakan analisis statistik untuk memprediksi pergerakan IHSG menggunakan dua pendekatan:
 - **ARIMA** (AutoRegressive Integrated Moving Average) - Model univariate
@@ -10,14 +11,14 @@ Proyek ini merupakan analisis statistik untuk memprediksi pergerakan IHSG menggu
 
 Analisis dilakukan menggunakan data historis IHSG periode 2020-2025 yang mencakup variabel harga pembukaan, penutupan, tertinggi, terendah, volume perdagangan, dan return harian.
 
-## 🎯 Tujuan
+## Tujuan
 
 1. Mengembangkan model forecasting yang akurat untuk IHSG
 2. Membandingkan performa model univariate (ARIMA) vs multivariate (VAR)
 3. Mengidentifikasi pola musiman dan tren jangka panjang dalam pergerakan IHSG
 4. Memberikan insight hubungan dinamis antar variabel pasar saham Indonesia
 
-## 📊 Dataset
+## Dataset
 
 | Variabel | Deskripsi | Format Awal | Format Akhir |
 |----------|-----------|-------------|--------------|
@@ -31,7 +32,7 @@ Analisis dilakukan menggunakan data historis IHSG periode 2020-2025 yang mencaku
 
 **Periode Data:** 2020-11-03 hingga 2025-11-03 (1.207 observasi harian)
 
-## 🔬 Metodologi
+## Metodologi
 
 ### 1. Model ARIMA
 
@@ -59,7 +60,7 @@ Model multivariate menggunakan 6 variabel endogen:
 - Lag optimal: 4
 - Model: VAR(4) dengan 6 variabel
 
-## 📈 Alur Analisis
+## Alur Analisis
 
 ### 1. Pra-pemrosesan Data
 - Konversi format string ke numerik
@@ -86,7 +87,7 @@ Model multivariate menggunakan 6 variabel endogen:
 - Visualisasi perbandingan forecast vs data aktual
 - Analisis error (RMSE, MAE)
 
-## 📉 Hasil
+## Hasil Pemodelan
 
 ### ARIMA Model
 
@@ -120,7 +121,7 @@ cd ARIMA-VAR-Forecast
 pip install -r requirements.txt
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 ```
 python >= 3.10
@@ -132,7 +133,7 @@ seaborn >= 0.12.0
 scipy >= 1.10.0
 ```
 
-## 🚀 Usage
+## Usage
 
 ```python
 # Import libraries
@@ -150,13 +151,13 @@ df = pd.read_csv('data/IHSG_data.csv')
 # [kode contoh implementasi]
 ```
 
-## 🎨 Customisasi
+## Customisasi
 
 - **Analisis Sektoral:** Ganti data IHSG dengan indeks sektoral (contoh: IDX:ENERGY)
 - **Frekuensi Berbeda:** Ubah resampling dari harian ke mingguan/bulanan
 - **Model Hybrid:** Kombinasi dengan machine learning (contoh: LSTM untuk residual ARIMA)
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 > **Peringatan:** Forecasting pasar saham memiliki ketidakpastian tinggi. Hasil analisis ini **BUKAN rekomendasi investasi** dan hanya untuk keperluan **edukasi/riset**.
 
@@ -173,8 +174,8 @@ df = pd.read_csv('data/IHSG_data.csv')
 
 ---
 
-⭐ **Jika proyek ini bermanfaat, berikan star di repository ini!**
+**Jika proyek ini bermanfaat, berikan star di repository ini!**
 
-📧 **Feedback & Kontribusi:** Silakan buka issue atau pull request untuk saran dan perbaikan.
+**Feedback & Kontribusi:** Silakan buka issue atau pull request untuk saran dan perbaikan.
 
-*Dikembangkan dengan ❤️ untuk edukasi analisis time series di Indonesia*
+*Dikembangkan dengan untuk edukasi analisis time series di Indonesia*
